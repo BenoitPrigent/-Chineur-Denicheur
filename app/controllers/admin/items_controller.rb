@@ -1,4 +1,4 @@
-module Dashboards
+module Admin
   class ItemsController < ApplicationController
 
     def create
