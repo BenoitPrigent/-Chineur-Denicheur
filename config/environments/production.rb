@@ -28,6 +28,7 @@ config.webpacker.check_yarn_integrity = false
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
+  config.assets.css_compressor = :yui
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
