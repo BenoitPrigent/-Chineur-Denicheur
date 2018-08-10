@@ -1,2 +1,10 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<%= "Coucou "%>
+<p> <%= @curiosite_category.name %></p>
+
+
+<%= link_to admin_category_path(@curiosite_category.id) do %>
+  <p> Curiosités </p>
+<% end %>
