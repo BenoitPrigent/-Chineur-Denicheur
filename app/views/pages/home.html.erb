@@ -5,9 +5,6 @@
 <p> <%= @curiosite_category.name %></p>
 
 
-
-
-<%= link_to category_item_url(@curiosite_category.id) do %>
+<%= link_to admin_category_path(@curiosite_category.id) do %>
   <p> Curiosités </p>
-
 <% end %>
