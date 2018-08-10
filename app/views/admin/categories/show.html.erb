@@ -1,17 +1,30 @@
 
 
 
-<h1> Categories </h1>
+<h1> <%= @category.name %> </h1>
 
 
 
+<%= simple_form_for(@item, url: admin_category_items_path(@category), method: "post") do |f| %>
+    <%= f.input :name, label: "Nom"%>
+    <%= f.input :description, label: "Courte description" %>
 
+
+    <%= f.submit %>
+<% end %>
 
 
 
 <div>
 
-  <h1> </h1>
+  <h1> Tous les objets de la catégories </h1>
+
+  <% @items.each do |item| %>
+    <div>
+      <p> <%= item.name %></p>
+      <p> <%= item.description %></p>
+    </div>
+  <% end %>
 
 
 
