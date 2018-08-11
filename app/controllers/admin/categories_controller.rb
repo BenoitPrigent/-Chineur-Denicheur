@@ -7,7 +7,6 @@ module Admin
       @item = Item.new
 
       @items = Item.where(category: @category)
-      raise
     end
 
 

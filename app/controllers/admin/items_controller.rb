@@ -3,8 +3,16 @@ module Admin
     before_action :set_category, only: [:create]
 
     def create
-      @item = Item.create(item_params)
-      redirect_to admin_category_url(@category)
+      @item = Item.new(item_params)
+      @item.category = @category
+
+      if @item.save
+        redirect_to admin_category_url(@category)
+      else
+        flash[:alert] = "Erreur"
+        redirect_to admin_category_url(@category)
+      end
+
     end
 
     def update
