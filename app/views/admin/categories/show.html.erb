@@ -21,6 +21,10 @@
       <div>
         <p> <%= item.name %></p>
         <p> <%= item.description %></p>
+        <%= link_to admin_category_item_path(@category, item), method: :delete, data: { confirm: "Êtes-vous sûr de vouloir supprimer #{item.name} ?" }  do  %>
+          <i class="fas fa-times"></i>
+        <% end %>
+
       </div>
     <% end %>
 
