@@ -1,1 +1,47 @@
 // Specific CSS for your home-page
+
+
+.home-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media all and (max-width: 768px){
+    width: auto;
+  }
+  @media all and (min-width: 769px) and (max-width: 991px) {
+    width: 750px;
+  }
+  @media all and (min-width: 992px) and (max-width: 1190px) {
+    width: 970px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 1120px;
+  }
+
+}
+
+
+#header-background {
+  margin: 30px 0px;
+  height : 60px;
+
+  position: relative;
+
+  h1 {
+    position: absolute;
+  }
+
+  #chineur {
+    top: -50px;
+    right: 50%;
+  }
+
+  #denicheur{
+    top: 9px;
+    left: 47%;
+  }
+}
+
+
