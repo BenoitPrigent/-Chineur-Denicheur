@@ -1,0 +1,50 @@
+.item {
+  display: flex;
+
+  .item-photo {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    img {
+      width: 70%;
+      margin: 20px;
+    }
+
+  }
+
+  .item-description {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+
+    .item-title {
+      font-family: Amiri-Italic;
+      font-size: 40px;
+      color: $light-gray;
+    }
+
+    .item-text {
+      font-weight: lighter;
+      font-size: 13px;
+      color: $light-gray;
+      text-align: justify;
+      width: 80%;
+
+    }
+
+    .mail-button {
+      border-style: solid;
+      border-width: 0px 0px 4px 0px;
+      border-color: $light-gray;
+      font-weight: lighter;
+      font-size: 16px;
+      color: black;
+    }
+
+  }
+
+
+
+}
