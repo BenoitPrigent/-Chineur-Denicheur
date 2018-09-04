@@ -10,6 +10,7 @@
     img {
       width: 70%;
       margin: 20px;
+      box-shadow: -28px -23px 0 4px #E5E5E5, 0 2px 4px 0 rgba(0,0,0,0.50);
     }
 
   }
@@ -31,20 +32,76 @@
       color: $light-gray;
       text-align: justify;
       width: 80%;
-
     }
 
     .mail-button {
-      border-style: solid;
-      border-width: 0px 0px 4px 0px;
-      border-color: $light-gray;
+      flex: 0 0 auto;
       font-weight: lighter;
-      font-size: 16px;
+      font-size: 12px;
       color: black;
+      position: relative;
+      text-decoration: none;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        right: 0px;
+        height: 2px;
+        background-color: $light-gray;
+        -webkit-transition: background 0.5s ease;
+        -o-transition: background 0.5s ease;
+        transition: background 0.5s ease;
+
+
+      }
+
+      &:hover {
+
+        &:before {
+          background-color: $light-gray !important;
+
+        }
+      }
+
     }
 
   }
 
+}
 
+.item-left {
+
+  .item-photo {
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    img {
+      box-shadow: -28px -23px 0 4px #E5E5E5, 0 2px 4px 0 rgba(0,0,0,0.50);
+    }
+
+  }
+
+  .item-description {
+    align-items: flex-start;
+  }
+
+}
+
+.item-right {
+
+  .item-photo {
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    img {
+      box-shadow: 28px -23px 0 4px #E5E5E5, 0 2px 4px 0 rgba(0,0,0,0.50);
+    }
+  }
+
+  .item-description {
+    align-items: flex-end;
+  }
 
 }
