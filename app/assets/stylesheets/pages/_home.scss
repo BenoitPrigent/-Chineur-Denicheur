@@ -42,3 +42,22 @@
   }
 }
 
+#octopus {
+  opacity: 0.20;
+  transform: rotate(-45deg);
+  position: absolute;
+  width: 50%;
+  right: 14%;
+  top: -95px;
+  z-index: -200;
+}
+
+//
+
+#last-items {
+  background-color: $green-tree;
+  margin-top: 400px;
+  padding-top: 50px;
+
+}
+
